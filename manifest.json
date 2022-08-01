@@ -1,0 +1,24 @@
+{
+    "manifest_version": 2,
+    "name": "Andriamanitter",
+    "author": "Andriamanitra",
+    "homepage_url": "https://github.com/andriamanitra/andriamanitter",
+    "version": "2.0.0",
+    "description": "Redirect twitter to a nitter instance",
+    "background": {
+        "scripts": [
+            "nitterify.js"
+        ]
+    },
+    "permissions": [
+        "storage",
+        "webRequest",
+        "webRequestBlocking",
+        "*://mobile.twitter.com/*",
+        "*://twitter.com/*"
+    ],
+    "options_ui": {
+        "page": "options.html",
+        "browser_style": true
+    }
+}
